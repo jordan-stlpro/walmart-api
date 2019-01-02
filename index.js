@@ -29,9 +29,10 @@ module.exports = function(key, options) {
   return {
     getItem: function(itemID, terra) {
       if (terra) {
+		console.log('meep');
         return _get(options, "//www.walmart.com/product/terra/" + itemID);
       } else {
-        return _get(options, "//www.walmart.com/product/mobile/api/" + itemID);
+        return _get(options, "//api.walmartlabs.com/v1/items/" + itemID + "?apiKey=" + key + "&format=json");
       }
     },
     getItemByUPC: function(upcCode) {
