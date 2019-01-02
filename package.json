@@ -1,6 +1,6 @@
 {
   "name": "walmart",
-  "version": "0.0.3",
+  "version": "0.0.55",
   "description": "Walmart API wrapper",
   "main": "index.js",
   "scripts": {
