@@ -27,7 +27,7 @@ Once you have the `walmart` object you can make these requests.
 This is a promise based library, so requests will look like this:
 
 ```
-walmart.getItem(10449075).then(function(item) {
+walmart.getItem('10449075').then(function(item) {
   console.log(item.product.productAttributes.productName);
 });
 ```
